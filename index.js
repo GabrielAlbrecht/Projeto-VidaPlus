@@ -30,7 +30,7 @@ const validLogin = () => {
         window.location.href = "medico/Mdashboard.html";
         break;
       case "administrador":
-        window.location.href = "admin/Adashboard.html";
+        window.location.href = "administrador/Adashboard.html";
         break;
       default:
         console.error("Perfil de usuário desconhecido:", user.profile);
