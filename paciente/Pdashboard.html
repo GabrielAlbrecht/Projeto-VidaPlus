@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área do paciente - VidaPlus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/Pdashboard.css" />
+  </head>
+  <body>
+    <header id="header-container">
+      <h1 id="header-title">VidaPlus</h1>
+      <div id="header-bar">
+        <h2>Bem-vindo(a), <span id="user-name">[NOME DO PACIENTE]!</span></h2>
+        <div id="header-link">
+          <a href="#">Sair <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <nav class="main-links">
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-house"></i> Dashboard</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-calendar-days"></i> Agendamentos</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-folder-open"></i> Prontuário</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-video"></i> Telemedicina</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-bell"></i> Notificações</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+        </div>
+      </nav>
+      <section class="info-container">
+        <div class="info-box" id="consulta-box">
+          <h3>Proxima Consulta</h3>
+          <p>
+            <strong
+              >Dr(a).
+              <span id="nome-medico-consulta">[NOME DO DOUTOR]</span>
+            </strong>
+          </p>
+          <p>
+            <strong
+              >Data/Hora:
+              <span id="consulta-data-hora">[DD/MM/AAAA] às [HH:HH]</span>
+            </strong>
+          </p>
+          <button class="btn-detalhes">Ver detalhes</button>
+        </div>
+        <div class="info-box">
+          <h3>Medicação atual</h3>
+          <p>
+            <strong>
+              <span id="nome-remedio">[NOME DO REMÉDIO]</span>
+            </strong>
+          </p>
+          <p>
+            <strong>
+              <span id="remedio-horário">[12 EM 12 HORAS]</span>
+            </strong>
+          </p>
+          <button class="btn-detalhes">Ver detalhes</button>
+        </div>
+        <div class="info-box">
+          <h3>Notificações recentes</h3>
+          <p>
+            <strong>Lembrete: 
+              <span id="lembrete-consulta">Consulta [DATA/HORA]</span>
+            </strong>
+          </p>
+          <p>
+            <strong> Alerta: 
+              <span id="exame-pronto">Exame [NOME DO EXAME] disponível</span>
+            </strong>
+          </p>
+        </div>
+        <div class="info-box">
+          <h3>Último exame</h3>
+          <p>
+            <strong>
+              <span id="ultimo-exame">[NOME DO EXAME]</span>
+            </strong>
+          </p>
+          <button class="btn-detalhes">Ver detalhes</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

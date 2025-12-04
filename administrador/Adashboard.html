@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área do Administrador - VidaPlus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/Adashboard.css" />
+  </head>
+  <body>
+    <header id="header-container">
+      <h1 id="header-title">VidaPlus</h1>
+      <div id="header-bar">
+        <h2>ACESSO ADMINISTRATIVO</h2>
+        <div id="header-link">
+          <a href="#">Sair <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <nav class="main-links">
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-house"></i> Dashboard</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-users"></i> Gestão de Usuários</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-file-medical"></i> Financeiro</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-folder-open"></i> Relatórios</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+        </div>
+      </nav>
+      <div class="info-main">
+        <h2 class="titulo-dados">Resumo de Dados</h2>
+        <section class="info-container">
+          <div class="info-box">
+            <div class="cabecalho-info">
+              <h3>Usuários</h3>
+              <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+            <ul class="lista-dados">
+              <li class="dado-item">
+                <p>Pacientes: <span id="total-pacientes">[X]</span></p>
+              </li>
+              <li class="dado-item">
+                <p>Médicos: <span id="total-medicos">[X]</span></p>
+              </li>
+              <li class="dado-item">
+                <p>Usuários Totais: <span id="total-users">[X]</span></p>
+              </li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <div class="cabecalho-info">
+              <h3>Consultas do Mês</h3>
+              <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+            <ul class="lista-dados">
+              <li class="dado-item">
+                <p>Consultas agendadas: <span id="consultas-agen">[X]</span></p>
+              </li>
+              <li class="dado-item">
+                <p>
+                  Consultas finalizadas: <span id="consultas-fin">[X]</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="relatorio-container">
+          <h2 class="titulo-dados">Gráficos do Mês</h2>
+          <section class="info-container">
+            <div class="info-box">
+              <div class="cabecalho-info">
+                <h3>Novos Pacientes</h3>
+              </div>
+              <figure class="img-grafico">
+                <img src="img/grafico-1-teste.png" alt="gráfico ilustrativo 1" />
+              </figure>
+            </div>
+            <div class="info-box">
+              <div class="cabecalho-info">
+                <h3>Novos Pacientes</h3>
+              </div>
+              <figure class="img-grafico">
+                <img src="img/grafico-2-teste.jpg" alt="gráfico ilustrativo 2" />
+              </figure>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área do Médico - VidaPlus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/Mdashboard.css" />
+  </head>
+  <body>
+    <header id="header-container">
+      <h1 id="header-title">VidaPlus</h1>
+      <div id="header-bar">
+        <h2>Olá, Dr(a). <span id="user-name">[NOME DO MÉDICO]!</span></h2>
+        <div id="header-link">
+          <a href="#">Sair <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <nav class="main-links">
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-house"></i> Dashboard</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-calendar-days"></i> Minha Agenda</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-users"></i> Pacientes</a>
+        </div>
+        <div class="link">
+          <a href="#"
+            ><i class="fa-solid fa-file-medical"></i> Receituário Digital</a
+          >
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-folder-open"></i> Prontuários</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-video"></i> Telemedicina</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-bell"></i> Notificações</a>
+        </div>
+        <div class="link">
+          <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+        </div>
+      </nav>
+      <section class="info-container">
+        <div class="info-box">
+          <h3>Pacientes Hoje</h3>
+          <p>
+            <strong>
+              Consultas Agendadas:
+              <span id="consultas-hoje">[X]</span>
+            </strong>
+          </p>
+        </div>
+        <div class="info-box">
+          <h3>Último Atendimento</h3>
+          <p>
+            <strong>
+              Prontuário de
+              <span id="paciente-recente">[NOME PACIENTE]</span>
+            </strong>
+          </p>
+          <button class="btn-detalhes">Ver prontuário</button>
+        </div>
+        <div class="info-box">
+          <h3>Último Atendimento</h3>
+          <p>
+            <strong>
+              Prontuário de
+              <span id="paciente-recente">[NOME PACIENTE]</span>
+            </strong>
+          </p>
+          <button class="btn-detalhes">Ver prontuário</button>
+        </div>
+        <div id="agenda-box">
+          <h2>Agenda Diária</h2>
+          <div id="lista-container">
+            <h3>Agenda - <span id="data-agenda-diaria">[DATA ATUAL]</span></h3>
+            <ul id="lista-pacientes">
+              <li class="paciente-item">
+                <p>
+                  <span id="hora-consulta">[HH:HH]</span>
+                  <span id="nome-paciente-dia">- [NOME DO PACIENTE]</span>
+                </p>
+                <div class="action-btn">
+                    <button class="start-atendimento">Iniciar Atendimento</button>
+                    <button class="end-atendimento">Finalizar Atendimento</button>
+                </div>
+              </li>
+              <li class="paciente-item">
+                <p>
+                  <span id="hora-consulta">[HH:HH]</span>
+                  <span id="nome-paciente-dia">- [NOME DO PACIENTE]</span>
+                </p>
+                <div class="action-btn">
+                    <button class="start-atendimento">Iniciar Atendimento</button>
+                    <button class="end-atendimento">Finalizar Atendimento</button>
+                </div>
+              </li>
+              <li class="paciente-item">
+                <p>
+                  <span id="hora-consulta">[HH:HH]</span>
+                  <span id="nome-paciente-dia">- [NOME DO PACIENTE]</span>
+                </p>
+                <div class="action-btn">
+                    <button class="start-atendimento">Iniciar Atendimento</button>
+                    <button class="end-atendimento">Finalizar Atendimento</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
